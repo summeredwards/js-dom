@@ -1,0 +1,48 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #C77FA1; 
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"candle1 candle2 candle3 match-box";
+	height: 100vh;
+}
+
+#candle1{
+	grid-area: candle1;
+	margin: 0 auto;
+	align-self: end; /*https://stackoverflow.com/questions/68760590/force-image-to-bottom-of-column-when-using-grid-with-css*/
+	justify-self: end;
+}
+
+#candle2{
+	grid-area: candle2;
+	margin: 0 auto;
+	align-self: end;
+	justify-self: end;
+}
+
+#candle3{
+	grid-area: candle3;
+	margin: 0 auto;
+	align-self: end;
+	justify-self: end;
+}
+
+#match-box{
+	grid-area: match-box;
+	align-self: center;
+	justify-self: center;
+	padding-right: 40px;
+}
+
+#match{
+	position: absolute;
+	pointer-events: none;
+}
+
